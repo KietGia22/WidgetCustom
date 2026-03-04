@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { networkStyles as s } from "../../styles/networkWidget.styles";
-import { Sparkline } from "../ui/SparkLine";
 
 interface NetworkMetrics {
   latency: number;
