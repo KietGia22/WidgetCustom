@@ -25,9 +25,7 @@ export function useDashboard(): UseDashboardReturn {
             return;
         const newWidget = {
             id: `w${Date.now()}`,
-            type,
-            col: 1,
-            row: Math.max(...widgets.map((w) => w.row), 0) + 1,
+            type
         };
         setWidgets((prev) => [...prev, newWidget]);
         setIsPanelOpen(false);
